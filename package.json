@@ -1,0 +1,19 @@
+{
+  "name": "package.jason",
+  "version": "1.0.0",
+  "description": "ANZX-Test",
+  "main": "main.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/ShashwatPrasad/SHASH-ANZX-APP.git"
+  },
+  "author": "Shashwat",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/ShashwatPrasad/SHASH-ANZX-APP/issues"
+  },
+  "homepage": "https://github.com/ShashwatPrasad/SHASH-ANZX-APP#readme"
+}
