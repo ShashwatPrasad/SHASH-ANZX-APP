@@ -41,6 +41,7 @@ jobs:
           sleep 10s
           netstat -tnlp
           curl http://localhost:8081/listapp
-          sleep 10s
+           echo Please use the https://IP:8081/lisport to get the output
+          sleep 1m
           for n in $(ps -ef | grep 'node main.js' | awk 'NR==1 {print $2}'); do echo "######## killing $n########"; ps -ef | grep $n && kill -9 $n && ps -ef | grep $n ; done
           
