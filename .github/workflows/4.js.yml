@@ -31,3 +31,4 @@ jobs:
           ls -lart
           which node
           node --version
+          node main.js
