@@ -6,7 +6,7 @@ name: CI
 on:
   # Triggers the workflow on push or pull request events but only for the master branch
   pull_request:
-    branches: [ master ]
+    branches: [ main ]
 # Allows you to run this workflow manually from the Actions tab
   workflow_dispatch:
 # A workflow run is made up of one or more jobs that can run sequentially or in parallel
@@ -38,7 +38,6 @@ jobs:
           node main.js &
           ps -ef | grep 'node main.js' | awk '{print $2}'
           curl http://localhost:8081/listapp
-          curl http://localhost:8081/listapp
-          for n in $(ps -ef | grep 'node main.js' | awk '{print $2}'); do echo "######## killing $n########"; ps -ef | grep $n && kill -9 $n && ps -ef | grep $n ; done
           sleep 1m
+          for n in $(ps -ef | grep 'node main.js' | awk '{print $2}'); do echo "######## killing $n########"; ps -ef | grep $n && kill -9 $n && ps -ef | grep $n ; done
           
