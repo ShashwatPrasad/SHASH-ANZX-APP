@@ -33,4 +33,6 @@ jobs:
           node --version
           npm install
           npm install express
+          ifconfig -a
+          route -n
           node main.js
