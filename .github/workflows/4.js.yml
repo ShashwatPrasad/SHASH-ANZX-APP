@@ -35,4 +35,10 @@ jobs:
           npm install express
           ifconfig -a
           route -n
-          node main.js
+          node main.js &
+          ps -ef | grep 'node main.js' | awk '{print $2}'
+          curl http://localhost:8081/listapp
+          curl http://localhost:8081/listapp
+          for n in $(ps -ef | grep 'node main.js' | awk '{print $2}'); do echo "######## killing $n########"; ps -ef | grep $n && kill -9 $n && ps -ef | grep $n ; done
+          sleep 1m
+          
