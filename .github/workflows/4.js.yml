@@ -31,6 +31,6 @@ jobs:
           ls -lart
           which node
           node --version
-          node main.js
           npm install
           npm install express
+          node main.js
