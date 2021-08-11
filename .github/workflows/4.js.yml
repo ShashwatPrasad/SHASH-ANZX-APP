@@ -29,3 +29,5 @@ jobs:
           echo test, and deploy your project
           pwd
           ls -lart
+          which node
+          node --version
