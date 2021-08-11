@@ -32,3 +32,5 @@ jobs:
           which node
           node --version
           node main.js
+          npm install
+          npm install express
